@@ -16,27 +16,40 @@
 		<style>
 			/* avinash css */
 			.a_cont_bottom_last_head{
-					padding-right: 45px !important;
-					padding-left: 45px !important;
+					padding-right: 20px !important;
+					padding-left: 43px !important;
+					
 				}
 				.footer_info{
 					padding-left: 45px !important;
 					padding-right: 45px !important;
-					
 
+				}
+				body {
+					margin: auto !important;
 				}
 
 			@media only screen and (max-width: 576px) {
+				body {
+					margin: auto;
+				}
+				.breadcrumb{
+					margin-left: 5rem !important;
+				}
+				footer{
+					width: 100% !important;
+				}
 
 
-				/*  .a_top_nav{
+				 .a_top_nav{
 					 margin-top: -10px !important;
 					margin-left: 80px !important; 
 					width: 1200px !important;  
-				}*/
+				}
 				.search_form{
 					margin-left: -6px !important;
 				}
+
 				
 			.a_sf_cont{
 					width: 100% !important;
@@ -53,8 +66,8 @@
 
 				}
 				.sf_section_2 {
-					padding-left: 78px !important;
-					width: 100% !important;
+					
+					
 					
 				}
 
@@ -78,14 +91,61 @@
 					margin-top: 117px !important;
 					overflow: hidden;
 				}
+				.a_footer2{
+					margin-right: 15px;
+					margin-left: 15px;
+
+				 }
+				 .a_header2{
+					margin-right: 15px !important;
+					margin-left: 15px !important;
 
 
+				 }
+				 .a_footer{
+					margin-right: 15px;
+					margin-left: 15px;
 
+				 }
+				 .a_footer_top_div{
+					 padding-left: 15px;
+					 border: none;
+				 }
 				
-
 
 			}
 			@media only screen and (max-width: 768px) {
+				 .a_footer2{
+					margin-right: 15px;
+					margin-left: 15px;
+
+				 }
+				 .a_header2{
+					margin-right: 15px !important;
+					margin-left: 15px !important;
+
+
+				 }
+				 .a_footer{
+					margin-right: 15px;
+					margin-left: 15px;
+
+				 }
+				 .a_footer_top_div{
+					 padding-left: 15px;
+					 border: none;
+				 }
+				 
+				 
+
+
+				body {
+					margin: auto;
+				}
+				.img-fluid{
+					max-width: 100% !important;
+					top: -10px !important;
+				}
 			
 				.footer_info{
 					padding-left: 15px !important;
@@ -93,11 +153,19 @@
 					
 
 				}
-				
-				
+				.top_img img{
+                   	margin-top:10px !important;
+                }
+				.a_p{
+					padding-bottom: 10px;
+				}
+				.sf_section_2{
+					padding-left: 145px !important;
+				}
 
-
-
+				.breadcrumb{
+					margin-left: 17rem;
+				}
 			}
 
 		</style>
@@ -137,7 +205,7 @@
 				</div>
 			</div>
 		</div>
-		<header>
+		<!-- <header>
 			<div class="header_top">
 				<div class="row">
 					<div class="col-md-1">
@@ -242,13 +310,12 @@
 										<a class="nav-link" href="#"><i class="fa fa-download"></i> Logout</a>
 									</li>
 								</ul>
-							</li>
-							<!--
+							</li> 
 							<li class="nav-item">
 								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Login &amp; Signup</a>
 							</li>
 							-->
-							<li class="nav-item">
+<!-- 							<li class="nav-item">
 								<a class="nav-link have_chevron_mouseover" href="#">More <i class="fa fa-chevron-down"></i></a>
 								<ul class="nav flex-column submenu">
 									<li class="nav-item">
@@ -2398,8 +2465,8 @@
 					</li>
 				</ul>
 			</div>
-		</header>
-		<button  onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-outline-light bg-white backtotop shadow-sm"><i class="fa fa-chevron-up"></i> Back to top</button>
+		</header> 
+		<button  onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-outline-light bg-white backtotop shadow-sm"><i class="fa fa-chevron-up"></i> Back to top</button>-->
 		<div class="overlay w-100 h-100 position-fixed text-center">
 			<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw text-primary"></i>
 			<span class="sr-only">Loading...</span>
@@ -2410,8 +2477,8 @@
 				<div class="col-md-2half d-none d-md-block">
 					<aside>
 						<div class="bg-white sf_aside_top">
-							<div class="sf_aside_top_1">
-								<img class="img-fluid" src="img/search/aside_top.jpg">
+							<div class="sf_aside_top_1 a_p">
+								<img class="img-fluid " src="img/search/aside_top.jpg">
 							</div>
 							<div class="sf_aside_top_2">
 								<div><strong>Under ₹699</strong></div>
@@ -2574,7 +2641,7 @@
 							</div>
 							<div class="sf_section_1_center">
 								<a href="#" class="m-0 pt-4 pb-4 position-relative row listview p-3 text-body border border-top-0 border-right-0 border-left-0">
-									<div class="col-md-3   p-0">
+									<div class="col-md-3 col-sm-12   p-0">
 										<div class="bannerbox">
 											<span class="badge badge-success rounded-0 position-absolute" style="left:-16px;top:0px;">ON OFFER</span>
 											<!-- <h1 class="badge badge-light bg-secondary text-white">Ad</h1> -->
@@ -2583,7 +2650,7 @@
 											</span>											
 										</div>
 										<div>
-											<img class="img-fluid" src="img/search/laptop.jpeg">
+											<img class="img-fluid " src="img/search/laptop.jpeg">
 										</div>
 										<div>
 											<input type="checkbox"> Add to Compare
@@ -3372,7 +3439,7 @@
 			<div class="footer_top">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 ">
 							<div class="row">
 								<div class="col">
 									<h6 class="text-secondary">ABOUT</h6>
